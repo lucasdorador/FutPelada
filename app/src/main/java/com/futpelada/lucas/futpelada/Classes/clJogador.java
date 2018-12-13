@@ -3,7 +3,6 @@ package com.futpelada.lucas.futpelada.Classes;
 public class clJogador {
 
     private int _id;
-    private String TEste;
     private int id_Treino;
     private String Nome;
     private Double valorMensalidade;
