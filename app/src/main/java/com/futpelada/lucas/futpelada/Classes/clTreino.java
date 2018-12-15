@@ -5,6 +5,7 @@ public class clTreino {
     private int _id;
     private String Nome;
     private String Local;
+    private Double valorMensal;
 
     public clTreino() {
         inicializaVariaveis();
@@ -14,6 +15,15 @@ public class clTreino {
         _id = 0;
         Nome = "";
         Local = "";
+        valorMensal = 0.00;
+    }
+
+    public Double getValorMensal() {
+        return valorMensal;
+    }
+
+    public void setValorMensal(Double valorMensal) {
+        this.valorMensal = valorMensal;
     }
 
     public int get_id() {

@@ -40,6 +40,7 @@ public class clFutPelada extends SQLiteOpenHelper {
     private void criaTabelaTreino(SQLiteDatabase db) {
         String sql = "create table treino ( _id INTEGER not null primary key autoincrement, " +
                 "nome text not null, " +
+                "valorMensal real, " +
                 "local text )";
 
         db.execSQL(sql);

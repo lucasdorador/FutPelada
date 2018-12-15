@@ -11,9 +11,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:backgroundTint="@color/colorPrimary"
         android:layout_margin="@dimen/fab_margin"
-        android:tint="#000"
+        android:backgroundTint="@color/colorPrimary"
         app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeTreinos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewTreinos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

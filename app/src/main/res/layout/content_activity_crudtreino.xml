@@ -8,4 +8,99 @@
     tools:context=".Activitys.ActivityCRUDTreino"
     tools:showIn="@layout/activity_crudtreino">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:background="@color/bootstrap_gray_dark"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            android:soundEffectsEnabled="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:elevation="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/logo" />
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edtNomeTreino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:hint="Nome do Treino"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="20dp"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edtLocalTreino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:hint="Local do Treino"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="20dp"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/edtValorTreino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp"
+                android:hint="Valor Mensal"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/bootstrap_gray_dark"
+                android:textSize="20dp"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnGravar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="Gravar Treino"
+                android:textStyle="bold"
+                app:bootstrapBrand="success"
+                app:bootstrapSize="lg"
+                app:buttonMode="regular"
+                app:roundedCorners="true"
+                app:showOutline="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 </android.support.constraint.ConstraintLayout>
